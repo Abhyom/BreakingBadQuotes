@@ -149,5 +149,51 @@ img{
     padding-right: 6px;
 }
 
+@media(min-width:990px){
+    body{
+        display:flex;
+	    flex-direction: column;
+        justify-content: space-between;
+        height: 100vh;
+	    box-sizing: border-box;
+        width:50vw;
+        align-content: space-between;
+        flex-wrap: wrap;
+    }
+    body>*:nth-child(1){
+        flex:1 10 45%;
+    }
+    body>*:nth-child(2){
+        flex: 1 5 15%;
+    }
+    body>*:nth-child(3){
+        flex:1 5 5%;
+    }
+    body>*:nth-child(4){
+        flex:1 2 40%;
+    }
+    .quote{
+        font-size: 3em;
+        padding: 1em 0 0 1em;
+        min-width: 700px;
+   }
+   .author{
+    font-size:2em;
+   }
+   img{
+    max-width: 500px;
+    max-height: 300px;
+    padding:3em 0 0 1em;
+    /* margin-top:auto;
+    margin-bottom: auto;
+    margin-left: auto; */
+    margin: auto;
+   }
+   button{
+    max-height: 120px;
+    box-sizing: border-box;
+   }
+}
+
 
 
