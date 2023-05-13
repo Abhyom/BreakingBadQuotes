@@ -46,9 +46,14 @@ table {
 
 
 html{
-	background-color: #062925;
+	background-image:url(bbmobile3.jpg);
+    background-size:contain;
+    /* position:absolute;
+    top:20rem; */
+    
 	width: 100vw;
 	height: 100vh;
+    
 
 
 }
@@ -60,13 +65,16 @@ body{
 	height: 100vh;
 	box-sizing: border-box;
     width:100vw;
+    background-color:rgba(0, 0, 0, 0.782);
+    /* overflow-x: hidden; */
+
 
 }
 body>*:nth-child(1){
 	flex:1 1 45%;
 }
 body>*:nth-child(2){
-	flex:1 1 10%;
+	flex:1 1 30%;
 }
 body>*:nth-child(3){
 	flex:1 1 5%;
@@ -106,11 +114,11 @@ body>*:nth-child(4){
 button{
 	font-size:1.30em;
 	color:white;
-        font-weight:500;
-        text-shadow: black 2px 2px;
-        word-spacing: 0.2em;
+    font-weight:500;
+    text-shadow: black 2px 2px;
+    word-spacing: 0.2em;
 	border-radius:0.3em;
-        background-color: #044A42;
+    background-color: #044A42;
 	font-family: 'Zilla Slab', serif;
 	padding: 3%;
 	margin:1em 0 1em;
@@ -148,8 +156,42 @@ img{
     font-family: 'Zilla Slab', serif;
     padding-right: 6px;
 }
+.charOneTwo.qut{
+    background-color: rgb(220, 218, 218);
+    font-family: 'Montserrat', sans-serif;
+    margin:auto;
+    text-align: center;
+    color:black;
+    min-width: 59px;
+    display: inline-block;
+   }
 
-@media(min-width:990px){
+   .charOneTwo.auth{
+        background-color: rgb(220, 218, 218);
+        font-family: 'Montserrat', sans-serif;
+        /* margin:none; */
+        max-height: 25px;
+        min-width: 40px;
+        text-align: center;
+        color:black;
+        padding: 0.1rem;
+        /* min-width: 69px; */
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        
+
+   }
+   
+
+/* CUSTOMIZATION FOR MEDIUM SCREED DEVICES  */
+
+@media(min-width:930px){
+    html{
+         background-image:url(bbwallpaper.jpg);
+         overflow: hidden;
+
+    }
     body{
         display:flex;
 	    flex-direction: column;
@@ -159,41 +201,87 @@ img{
         width:50vw;
         align-content: space-between;
         flex-wrap: wrap;
+        background-color: rgba(0, 0, 0, 0.442);
+
     }
     body>*:nth-child(1){
-        flex:1 10 45%;
+        flex:1 1 45%;
     }
     body>*:nth-child(2){
-        flex: 1 5 15%;
+        flex: 1 1 10%;
     }
     body>*:nth-child(3){
-        flex:1 5 5%;
+        flex:1 1 5%;
     }
     body>*:nth-child(4){
         flex:1 2 40%;
+        /* background-color: rgba(99, 45, 45, 0.548); */
+        
+
+
     }
     .quote{
         font-size: 3em;
         padding: 1em 0 0 1em;
-        min-width: 700px;
+        min-width: 46vw;
+        /* min-width: 46%; */
+
    }
    .author{
     font-size:2em;
+    max-height: 70px;
+
    }
    img{
-    max-width: 500px;
-    max-height: 300px;
+    
     padding:3em 0 0 1em;
+    max-width: 91.28%;
+    max-height: 68.5%;
+    /* margin-top:auto;
+    margin-bottom: auto;
+    margin-left: auto; */
     margin: auto;
+
+   }
+   .imgCont{
+         background-color: rgba(99, 45, 45, 0.548);
+
    }
    button{
-    max-height: 120px;
+    max-height: 80px;
     box-sizing: border-box;
     display: flex;
     justify-content: center;
     align-items: center;
+    /* margin-top: auto; */
    }
+
+   .charOneTwo.qut{
+    background-color: rgb(220, 218, 218);
+    font-family: 'Montserrat', sans-serif;
+    margin:auto;
+    text-align: center;
+    color:black;
+    min-width: 69px;
+    display: inline-block;
+   }
+
+   .charOneTwo.auth{
+        background-color: rgb(220, 218, 218);
+        font-family: 'Montserrat', sans-serif;
+        /* margin:none; */
+        max-height: 40px;
+        min-width: 50px;
+        text-align: center;
+        color:black;
+        padding: none;
+        /* min-width: 69px; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+   }
+
+   
+  
 }
-
-
-
