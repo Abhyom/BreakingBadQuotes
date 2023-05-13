@@ -493,13 +493,39 @@ function generateQuote()
     return randQuote;
 }
 
+
+
 function printQuote()
 {
     randQ=generateQuote();
-    document.querySelector('p.quote').innerText=randQ.quote;
-    document.querySelector('p.author').innerText=randQ.author;
+    //below is the new shit 
+    const firstTwoQ=randQ.quote.slice(0,2);
+    const restAllQ=randQ.quote.slice(2);
+    document.querySelector('p.quote').innerHTML=`<span class="charOneTwo qut">${firstTwoQ}</span><span class="charRest qut">${restAllQ}</span>`;
+    const firstTwoA=randQ.author.slice(0,2);
+    const restAllA=randQ.author.slice(2);
+    document.querySelector('p.author').innerHTML=`<span class="charOneTwo auth">${firstTwoA}</span><span class="charRest auth">${restAllA}</span>`;
+
+    
+
+
+
+    // const charOneTwo=document.querySelector('.charOneTwo');
+    // charOneTwo.style.fontFamily="Zilla Slab Highlight, cursive";
+   
+    
+
+    //thus is the og code 
+    // document.querySelector('p.quote').innerText=randQ.quote;
+    // document.querySelector('p.author').innerText=randQ.author;
     const randNo=Math.floor(Math.random()*22)+1;
     document.querySelector('img').src=`imgs/ww${randNo}.jpg`;
     
 }
  document.querySelector('.btn').addEventListener('click', printQuote);
+
+ 
+
+    
+
+
